@@ -1,6 +1,6 @@
-import React from "react";
-import CTA from "../styled/CTA";
-import { Accent, StyledTitle } from "../styled/Reusable";
+import React from 'react';
+import CTA from '../styled/CTA';
+import { Accent, StyledTitle } from '../styled/Reusable';
 
 export default function Home() {
   return (

@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   StyledNavbar,
   StyledNavBrand,
   StyledNavItems,
   StyledLink,
-} from "../styled/Navbar";
-import { Accent } from "../styled/Reusable";
+} from '../styled/Navbar';
+import { Accent } from '../styled/Reusable';
 
 export default function Navbar() {
   return (
