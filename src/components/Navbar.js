@@ -4,7 +4,7 @@ import {
   StyledNavbar,
   StyledNavBrand,
   StyledNavItems,
-  StyledLink
+  StyledLink,
 } from "../styled/Navbar";
 import { Accent } from "../styled/Reusable";
 
