@@ -5,6 +5,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     color: #333;
     margin: 0;
+    overflow: auto;
     font-family: sans-serif;
     font-weight: 300;
   }
