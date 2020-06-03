@@ -13,7 +13,7 @@ export default function Navbar() {
     <StyledNavbar>
       <StyledNavBrand>
         <Link to="/">
-          Learn.Build.<Accent>Type.</Accent>
+          ~Typing~<Accent>Fun</Accent>~
         </Link>
       </StyledNavBrand>
       <StyledNavItems>
