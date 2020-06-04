@@ -8,11 +8,9 @@ import {
 } from '../styled/Navbar';
 import { Accent } from '../styled/Reusable';
 import { useAuth0 } from '../auth';
-//import useTheme from '../hooks/UseTheme';
 
 export default function Navbar({ toggleTheme }) {
   const { logout, isAuthenticated, loginWithRedirect } = useAuth0();
-  //const [theme, toggleTheme] = useTheme();
 
   return (
     <StyledNavbar>
