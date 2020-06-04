@@ -4,13 +4,31 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ScoreProvider } from './contexts/ScoreContext';
+import { Auth0Provider } from './auth';
+import history from './utils/history';
+import config from './auth_config.json';
+
+const onRedirectCallback = (appState) => {
+  history.push(
+    appState && appState.targetUrl
+      ? appState.targetUrl
+      : window.location.pathname
+  );
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ScoreProvider>
-      <App />
-    </ScoreProvider>
-  </React.StrictMode>,
+  <Auth0Provider
+    domain={config.domain}
+    client_id={config.clientId}
+    redirect_uri={window.location.origin}
+    onRedirectCallback={onRedirectCallback}
+  >
+    <React.StrictMode>
+      <ScoreProvider>
+        <App />
+      </ScoreProvider>
+    </React.StrictMode>
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
