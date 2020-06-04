@@ -22,6 +22,7 @@ ReactDOM.render(
     client_id={config.clientId}
     redirect_uri={window.location.origin}
     onRedirectCallback={onRedirectCallback}
+    audience={config.audience}
   >
     <React.StrictMode>
       <ScoreProvider>

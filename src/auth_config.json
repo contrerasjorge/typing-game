@@ -1,4 +1,5 @@
 {
   "domain": "typing-fun.auth0.com",
-  "clientId": "KUEgoqUAvdVLxRdqpUCDHkJgCgrLlciZ"
+  "clientId": "KUEgoqUAvdVLxRdqpUCDHkJgCgrLlciZ",
+  "audience": "https://typingfunapi/"
 }
