@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CTA from '../styled/CTA';
 import { Accent, StyledTitle } from '../styled/Reusable';
 
-export default function Home() {
+export default function Home({ history }) {
+  useEffect(() => {
+    window.addEventListener('keypress', downHandler);
+
+    function downHandler(key) {
+      if (key.key === 's') {
+        history.push('/game');
+        console.log('hi');
+      }
+    }
+
+    return () => {
+      window.removeEventListener('keypress', downHandler);
+    };
+  }, [history]);
+
   return (
     <div>
       <StyledTitle>Ready to type?</StyledTitle>
