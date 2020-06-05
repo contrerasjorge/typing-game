@@ -9,7 +9,6 @@ export default function Home({ history }) {
     function downHandler(key) {
       if (key.key === 's') {
         history.push('/game');
-        console.log('hi');
       }
     }
 
