@@ -5,7 +5,6 @@ import { useAuth0 } from '../auth';
 
 export default function Home() {
   const { user } = useAuth0();
-  console.log(user);
 
   return (
     <div>
