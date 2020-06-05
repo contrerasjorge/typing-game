@@ -5,11 +5,11 @@ export const StyledNavbar = styled.nav`
   display: grid;
   grid-template-columns: 1fr auto;
   padding: 20px;
-  text-align: left;
 `;
 
 export const StyledNavBrand = styled.div`
   font-size: 1.4rem;
+  text-align: left;
 
   & > a {
     text-decoration: none;
@@ -18,10 +18,11 @@ export const StyledNavBrand = styled.div`
 
 export const StyledNavItems = styled.ul`
   list-style: none;
-  padding: left: 0;
+  padding-left: 0;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 20px;
+  align-items: center;
 `;
 
 export const StyledLink = styled(Link)`
