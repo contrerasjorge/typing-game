@@ -11,10 +11,10 @@
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^1.12.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.1",
     "styled-components": "^5.2.1"
   },
   "scripts": {
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
   }
 }
